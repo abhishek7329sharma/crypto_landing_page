@@ -1,0 +1,92 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins";
+  background-image: url("./assets/bg.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-size: 100% 100%;
+  height: 100vh;
+}
+html {
+  height: 100%;
+}
+:root {
+  --button-bg: #ba0cc5;
+  --button-text: #ffffff;
+}
+
+section[aria-label="navbar"] {
+  background-color: #000000;
+  color: #fbfbfb;
+}
+section[aria-label="hero"] {
+}
+
+nav.navbar {
+  display: flex;
+  padding: 9px 80px;
+  align-items: center;
+}
+
+ul.list {
+  list-style-type: none;
+  display: flex;
+  padding: 0;
+}
+.grow-list {
+  margin-right: auto;
+}
+.list-item:first-child::after {
+  content: "";
+  border: solid rgb(255, 253, 253);
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  margin-left: 8px;
+}
+
+img[alt="logo"] {
+  width: 50px;
+  width: 80px;
+}
+
+.line {
+  width: 1px;
+  height: 37px;
+  background-color: #fff;
+  margin: 0 60px;
+}
+
+li.list-item {
+  padding: 0 36px;
+}
+
+button {
+  background-color: var(--button-bg);
+  color: var(--button-text);
+  padding: 10px 19px;
+  border-radius: 5px;
+  border: none;
+}
+.hero-heading {
+  font-size: 77px;
+  text-align: center;
+  color: #fff;
+  padding: 0 280px;
+}
+.hero-description {
+  font-size: 22px;
+  text-align: center;
+  color: #fff;
+}
+.button-large {
+  text-align: center;
+  margin: 0px auto;
+  /* width: 100%; */
+  position: relative;
+  left: 45%;
+  font-size: 22px;
+}
